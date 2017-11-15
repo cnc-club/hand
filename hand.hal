@@ -1,0 +1,36 @@
+loadrt genserkins
+show
+#loadrt motmod  servo_period_nsec=1000000 num_joints=3
+
+
+    0  genserkins.A-0
+    16  float I/O             0  genserkins.A-1
+    16  float I/O           300  genserkins.A-2
+    16  float I/O            50  genserkins.A-3
+    16  float I/O             0  genserkins.A-4
+    16  float I/O             0  genserkins.A-5
+    16  float I/O             0  genserkins.ALPHA-0
+    16  float I/O     -1.570796  genserkins.ALPHA-1
+    16  float I/O             0  genserkins.ALPHA-2
+    16  float I/O     -1.570796  genserkins.ALPHA-3
+    16  float I/O      1.570796  genserkins.ALPHA-4
+    16  float I/O     -1.570796  genserkins.ALPHA-5
+    16  float I/O             0  genserkins.D-0
+    16  float I/O             0  genserkins.D-1
+    16  float I/O            70  genserkins.D-2
+    16  float I/O           400  genserkins.D-3
+    16  float I/O             0  genserkins.D-4
+    16  float I/O             0  genserkins.D-5
+
+
+  Name
+    16  s32   RO              0  genserkins.last-iterations
+    16  s32   RW            100  genserkins.max-iterations
+    16  s32   RW              0  genserkins.unrotate-0
+    16  s32   RW              0  genserkins.unrotate-1
+    16  s32   RW              0  genserkins.unrotate-2
+    16  s32   RW              0  genserkins.unrotate-3
+    16  s32   RW              0  genserkins.unrotate-4
+    16  s32   RW              0  genserkins.unrotate-5
+     4  s32   RO              0  iocontrol.0.tool-prep-index
+
